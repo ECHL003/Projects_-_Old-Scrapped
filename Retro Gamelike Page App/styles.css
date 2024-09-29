@@ -1,0 +1,112 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #282828;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6f61;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffeb3b;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+#hero {
+    background-color: #3f51b5;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2em;
+    color: #ffeb3b;
+}
+
+#features ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.gallery-item img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ffffff;
+}
+
+#community .highlight {
+    background-color: #009688;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #ff6f61;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}

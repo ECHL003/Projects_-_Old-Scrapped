@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: #101010;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header .logo h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.header .user-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.header .user-menu a:hover {
+    color: #ff6b6b;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #202020;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.sidebar a:hover {
+    background: #4ca1af;
+    transform: scale(1.05);
+}
+
+.sidebar a.active {
+    background: #ff6b6b;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cards */
+.card {
+    background: #303030;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff6b6b;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.card:hover {
+    background: #404040;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Button */
+.button {
+    background: #ff6b6b;
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px #000000;
+    margin: 0.5rem 0;
+}
+
+.button:hover {
+    background: #ff8585;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

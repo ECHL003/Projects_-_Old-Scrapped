@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamelogger - Profile</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    </noscript>
+    <link rel="stylesheet" href="styles-profile.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <h1>Gamelogger</h1>
+        </div>
+        <div class="user-menu">
+            <a href="profile.html">User Profile</a>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <a href="index.html" id="home-nav">Home</a>
+        <a href="library.html" id="library-nav">Library</a>
+        <a href="community.html" id="community-nav">Community</a>
+        <a href="profile.html" id="profile-nav" class="active">Profile</a>
+    </div>
+
+    <div class="main-content">
+        <div class="section active" id="profile">
+            <h2>My Profile</h2>
+            <div class="profile-header">
+                <div class="profile-picture">
+                    <img src="profile-pic.png" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <h3>Username: Gamer123</h3>
+                    <p>Level: 20</p>
+                    <p>Joined: January 2023</p>
+                </div>
+            </div>
+            <div class="profile-sections">
+                <div class="section-card">
+                    <h3>Game Statistics</h3>
+                    <p>Total Games Played: 120</p>
+                    <p>Total Playtime: 500 hours</p>
+                    <p>Favorite Genre: RPG</p>
+                </div>
+                <div class="section-card">
+                    <h3>Achievements</h3>
+                    <ul>
+                        <li>Master of RPGs</li>
+                        <li>Completionist</li>
+                        <li>Speed Runner</li>
+                    </ul>
+                </div>
+                <div class="section-card">
+                    <h3>Friends List</h3>
+                    <ul>
+                        <li>PlayerOne</li>
+                        <li>PlayerTwo</li>
+                        <li>PlayerThree</li>
+                    </ul>
+                </div>
+                <div class="section-card">
+                    <h3>Settings</h3>
+                    <button class="button">Edit Profile</button>
+                    <button class="button">Change Password</button>
+                    <button class="button">Privacy Settings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

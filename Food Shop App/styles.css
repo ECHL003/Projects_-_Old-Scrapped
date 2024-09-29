@@ -1,0 +1,178 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background: url('assets/images/banner.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 1.25rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.product-list,
+.featured-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-card,
+.featured-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 1rem);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover,
+.featured-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img,
+.featured-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h2,
+.featured-card h2 {
+    margin: 0.5rem;
+}
+
+.product-card p,
+.featured-card p {
+    margin: 0.5rem;
+    color: #888888;
+}
+
+.product-card button,
+.checkout button {
+    background-color: #28a745;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.product-card button:hover,
+.checkout button:hover {
+    background-color: #218838;
+}
+
+.featured-products {
+    margin-top: 2rem;
+}
+
+.featured-products h2 {
+    margin-bottom: 1rem;
+}
+
+.cart,
+.checkout,
+.contact {
+    margin-top: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #dddddd;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.contact {
+    margin-top: 2rem;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 0.25rem;
+}
+
+form button {
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}

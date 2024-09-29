@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Game Galaxy</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h2>Welcome to Game Galaxy</h2>
+            <p>Your one-stop shop for the best games in the universe!</p>
+        </div>
+    </section>
+
+    <section id="featured">
+        <h2>Featured Games</h2>
+        <div class="game-container">
+            <div class="game-card" data-game="1">
+                <img src="game1.jpg" alt="Game 1">
+                <h3>Game Title 1</h3>
+                <p>Exciting adventure game.</p>
+                <button>View Details</button>
+            </div>
+            <div class="game-card" data-game="2">
+                <img src="game2.jpg" alt="Game 2">
+                <h3>Game Title 2</h3>
+                <p>Thrilling action game.</p>
+                <button>View Details</button>
+            </div>
+            <div class="game-card" data-game="3">
+                <img src="game3.jpg" alt="Game 3">
+                <h3>Game Title 3</h3>
+                <p>Immersive RPG experience.</p>
+                <button>View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Game Galaxy. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Game Details</h2>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Game Image">
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

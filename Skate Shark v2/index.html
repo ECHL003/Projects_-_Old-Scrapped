@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Shark - Premium Skates</title>
+    <link rel="stylesheet" href="styles-v2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">SKATE SHARK</div>
+        <div class="nav-icons">
+            <i class="fas fa-home" title="Home"></i>
+            <i class="fas fa-user" title="Profile"></i>
+            <i class="fas fa-shopping-cart" title="Cart"></i>
+            <i class="fas fa-bars" title="Menu"></i>
+        </div>
+    </nav>
+
+    <!-- Homepage Hero Section -->
+    <section id="homepage" class="section active">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Unleash Your Ride with <span>Skate Shark</span></h1>
+                <p>Get the best skates and gear for your next adventure. High-quality, innovative designs for every
+                    skill level.</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="showProductDetails()">Shop Now</button>
+                    <button class="btn-secondary">Explore More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero-skate-image.jpg" alt="Skate Shark Main Image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section id="product-details" class="section hidden">
+        <div class="product-main">
+            <div class="product-gallery">
+                <img src="product-large.jpg" alt="Product Image" class="main-image">
+                <div class="image-thumbnails">
+                    <img src="thumb1.jpg" alt="Thumbnail 1">
+                    <img src="thumb2.jpg" alt="Thumbnail 2">
+                    <img src="thumb3.jpg" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="product-info">
+                <h2>Skate XX-XXX</h2>
+                <p class="price">$299.00</p>
+                <p>High-performance skates with adjustable features for comfort and speed. Perfect for pros and
+                    beginners alike.</p>
+                <button class="btn-primary" onclick="showCheckout()">Proceed to Checkout</button>
+            </div>
+        </div>
+        <!-- Product Features Section -->
+        <div class="product-features">
+            <div class="feature-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Feature 01</h3>
+                <p>Customizable wheels and bearings for all skill levels.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Feature 02</h3>
+                <p>Durable construction for extended use.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-wind"></i>
+                <h3>Feature 03</h3>
+                <p>Lightweight and aerodynamic design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout -->
+    <section id="checkout" class="section hidden">
+        <div class="checkout-progress">
+            <p>Step 1: Shipping Details → Step 2: Payment → Step 3: Review Order</p>
+        </div>
+        <div class="checkout">
+            <h2>Checkout</h2>
+            <div class="summary">
+                <p>Skate XX-XXX</p>
+                <p>Price: $299.00</p>
+                <p>Shipping: $9.00</p>
+                <p class="total">Total: $308.00</p>
+            </div>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="card">Card Information:</label>
+                <input type="text" id="card" placeholder="Card Number" required>
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="text" id="expiry" placeholder="MM/YY" required>
+
+                <label for="cvc">CVC:</label>
+                <input type="text" id="cvc" placeholder="CVC" required>
+
+                <button type="submit" class="btn-primary" onclick="showConfirmation()">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Confirmation -->
+    <section id="confirmation" class="section hidden">
+        <div class="confirmation-message">
+            <i class="fas fa-check-circle"></i>
+            <h2>Order Confirmed!</h2>
+            <p>Thank you for your purchase. Your order is being processed and will be shipped soon!</p>
+        </div>
+        <div class="social-share">
+            <p>Share your new gear on social media!</p>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </section>
+
+    <script src="app-v2.js"></script>
+</body>
+
+</html>

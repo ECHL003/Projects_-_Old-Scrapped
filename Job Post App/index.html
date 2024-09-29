@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Post App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">JobPost</div>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="post-job-link">Post a Job</a></li>
+                <li><a href="#" id="login-link">Login</a></li>
+                <li><a href="#" id="logout-link" style="display: none;">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="search-filter">
+            <input type="text" id="search-input" placeholder="Search jobs...">
+            <select id="location-filter">
+                <option value="all">All Locations</option>
+                <option value="remote">Remote</option>
+                <option value="ny">New York</option>
+                <!-- Add more locations -->
+            </select>
+            <button id="search-button">Search</button>
+        </section>
+        <section class="job-listings" id="job-listings">
+            <!-- Job listings will be dynamically inserted here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 JobPost. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-login-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Post Job Modal -->
+    <div id="post-job-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-post-job-modal">&times;</span>
+            <h2>Post a Job</h2>
+            <form id="post-job-form">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" required>
+                <label for="job-company">Company:</label>
+                <input type="text" id="job-company" required>
+                <label for="job-location">Location:</label>
+                <input type="text" id="job-location" required>
+                <label for="job-description">Description:</label>
+                <textarea id="job-description" required></textarea>
+                <button type="submit">Post Job</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

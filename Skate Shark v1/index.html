@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Shark</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">SKATE SHARK</div>
+        <div class="nav-icons">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="homepage" class="section active">
+        <div class="hero">
+            <div class="product-image"></div>
+            <div class="marketing-message">
+                <h1>This is our marketing message.</h1>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="showProductDetails()">Buy Now</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section id="product-details" class="section hidden">
+        <div class="product-details">
+            <div class="product-main">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h2>Product XX-XXX</h2>
+                    <p>Description: Lorem ipsum dolor sit amet...</p>
+                </div>
+            </div>
+            <div class="product-features">
+                <div class="feature">
+                    <h3>Feature/Benefit 01</h3>
+                    <p>Details about this feature...</p>
+                </div>
+                <div class="feature">
+                    <h3>Feature/Benefit 02</h3>
+                    <p>Details about this feature...</p>
+                </div>
+                <div class="feature">
+                    <h3>Feature/Benefit 03</h3>
+                    <p>Details about this feature...</p>
+                </div>
+            </div>
+            <button class="btn-primary" onclick="showCheckout()">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- Checkout -->
+    <section id="checkout" class="section hidden">
+        <div class="checkout">
+            <h2>Check Out</h2>
+            <div class="product-summary">
+                <div class="product-image"></div>
+                <div class="summary-details">
+                    <p>Product Name</p>
+                    <p>$299.00</p>
+                    <p>Shipping: $9.00</p>
+                    <p class="total-amount">Total: $308.00</p>
+                </div>
+            </div>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Card Information" required>
+                <div class="card-details">
+                    <input type="text" placeholder="MM/YY" required>
+                    <input type="text" placeholder="CVC" required>
+                </div>
+                <button class="btn-primary" type="button" onclick="showConfirmation()">Purchase</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Confirmation -->
+    <section id="confirmation" class="section hidden">
+        <div class="confirmation">
+            <h2>Congratulations!</h2>
+            <p>Your order is on its way!</p>
+            <div class="cta-social">
+                <p>Tell your friends about your great choice!</p>
+                <div class="social-icons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
