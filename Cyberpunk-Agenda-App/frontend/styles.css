@@ -1,0 +1,114 @@
+body {
+    background-color: #0a0a0a;
+    /* Dark background for cyberpunk look */
+    color: #00ff99;
+    /* Neon green text color */
+    font-family: 'Courier New', Courier, monospace;
+    /* Monospace font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 350px;
+    background: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent background */
+    padding: 20px;
+    border: 2px solid #00ff99;
+    /* Neon border */
+    box-shadow: 0 0 20px #00ff99;
+    /* Neon glow */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    background: #111;
+    /* Dark background for inputs */
+    border: 1px solid #00ff99;
+    /* Neon border */
+    color: #00ff99;
+    /* Neon text color */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+button {
+    background: #111;
+    /* Dark background for buttons */
+    border: 1px solid #00ff99;
+    /* Neon border */
+    color: #00ff99;
+    /* Neon text color */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #00ff99;
+    /* Neon hover effect */
+    color: #111;
+    /* Dark text on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #111;
+    /* Dark background for list items */
+    border: 1px solid #00ff99;
+    /* Neon border */
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+button {
+    background: #111;
+    border: 1px solid #00ff99;
+    color: #00ff99;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button.edit {
+    background: #ffaa00;
+    /* Orange for edit button */
+    color: #111;
+}
+
+button.delete {
+    background: #ff0000;
+    /* Red for delete button */
+    color: #111;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Agenda App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cyberpunk Agenda</h1>
+        <div id="auth-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Username">
+                <input type="password" id="login-password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Username">
+                <input type="password" id="register-password" placeholder="Password">
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <div id="profile-section" style="display: none;">
+            <h2>User Profile</h2>
+            <div id="user-profile"></div>
+        </div>
+        <div id="agenda-section" style="display: none;">
+            <form id="agenda-form">
+                <input type="text" id="agenda-input" placeholder="Add new item...">
+                <button type="submit">Add</button>
+            </form>
+            <ul id="agenda-list"></ul>
+            <h2>History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
